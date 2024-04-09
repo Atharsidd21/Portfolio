@@ -1,0 +1,94 @@
+.container {
+  background-color: rgb(212, 205, 205);
+  height: 93vh;
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  /* width: 100%; */
+  
+}
+.name {
+  width: 45%;
+}
+h1 {
+  line-height: 3rem;
+  font-size: 2.5rem;
+}
+.btn {
+  margin-top: 1rem;
+  border-radius: 25%;
+  color: white;
+  font-weight: 700;
+  background-color: #2506ad;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn:hover {
+  background-color: darksalmon;
+  color: #000000;
+}
+.img {
+  object-fit: contain;
+}
+#avatar {
+  object-fit: fill;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  box-shadow: 1rem 0.1rem rgb(144, 14, 14);
+}
+#avatar:hover {
+  box-shadow: -1rem 0.1rem rgb(144, 14, 14);
+}
+.social {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.social-list {
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 50%;
+  color: white;
+}
+.social-list:hover {
+  background-color: rgb(150, 227, 227);
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  #avatar {
+    height: 20rem;
+    width: 20rem;
+  }
+  h1 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  #avatar {
+    height: 15rem;
+    width: 15rem;
+  }
+  .social {
+    gap: 1rem;
+  }
+  .name{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn{
+    height: auto;
+    width: auto;
+    font-size: smaller;
+  }
+}

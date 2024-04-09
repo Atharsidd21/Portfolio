@@ -1,0 +1,88 @@
+.container-skills {
+  margin-top: 3rem;
+  background-color: rgb(121, 78, 238);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#comp {
+  font-size: 3rem;
+}
+.skills-header {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(97, 145, 229, 0.508);
+}
+#skill-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 10%;
+}
+.img-map {
+  height: 3.5rem;
+  width: 2.5rem;
+  /* object-fit:fill; */
+}
+.set {
+  padding: 0.5rem;
+  background-color: rgb(1, 3, 12);
+  height: 6rem;
+  width: 6rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+@keyframes hovering-set {
+  0% {
+    border-radius: 5%;
+  }
+  25% {
+    border-radius: 10%;
+  }
+  50% {
+    border-radius: 20%;
+  }
+  100% {
+    border-radius: 5%;
+  }
+}
+
+.set:hover {
+  opacity: 80%;
+  /* border-radius: 20%; */
+  animation-name: hovering-set;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 992px) {
+  .container-skills {
+    height: auto;
+  }
+  .skills {
+    height: auto;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .skills {
+    width:90%;
+  }
+}

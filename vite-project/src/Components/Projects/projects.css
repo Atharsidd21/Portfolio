@@ -1,0 +1,77 @@
+.container-projects {
+  background: rgb(21, 20, 61);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.project-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.project-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.pro-body {
+  height: 20rem;
+  width: 25rem;
+  background-color: rgb(207, 209, 198);
+  text-align: center;
+  position: relative;
+}
+.pro-body2 {
+  top: 0;
+  position: absolute;
+  height: 20rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.848);
+  color: white;
+}
+#pro-img {
+  height: 18rem;
+  width: 25rem;
+}
+#btn-view {
+  height: 2rem;
+  width: 5rem;
+  background-color: rgba(3, 244, 19, 0.847);
+  border: 1px solid white;
+  border-radius: 30%;
+}
+.detail-div {
+  height: 60%;
+}
+@media screen and (max-width: 576px) {
+  .pro-body {
+    height: auto;
+    width: auto;
+  }
+  .pro-body2 {
+    height: 18rem;
+    width: 18rem;
+  }
+  #pro-img {
+    max-height: 18rem;
+    max-width: 18rem;
+  }
+  #name-head{
+    font-size: 1.5rem;
+  }
+  #comp{
+    font-size: 1.5rem;
+  }
+}

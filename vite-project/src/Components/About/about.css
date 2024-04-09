@@ -1,0 +1,90 @@
+.container-about {
+  background-color: white;
+  height: 92vh;
+  margin-top: 4rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+#user {
+  font-size: 3rem;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.box-about {
+  display: flex;
+  margin-left: 10rem;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+#about-pic {
+  height: 25rem;
+  width: 13rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation-name: pic-ani;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes pic-ani {
+  0% {
+    border-radius: 0%;
+  }
+  25% {
+    border-radius: 25%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0%;
+  }
+}
+
+.details {
+  width: 45%;
+}
+.resume-btn {
+  margin-top: 1rem;
+  color: white;
+  text-align: center;
+  background-color: blue;
+  padding: 1rem;
+  border-radius: 25%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.resume-btn:hover {
+  border-radius: 40%;
+}
+@media screen and (max-width: 768px) {
+  .box-about {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-about {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .box-about {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 0.6rem;
+    margin-left: 7rem;
+  }
+  #about-pic {
+    height: 20rem;
+    width: 9rem;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #user {
+    font-size: 2rem;
+  }
+  .details {
+    width: 75%;
+  }
+}

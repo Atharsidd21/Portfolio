@@ -1,0 +1,77 @@
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: cursive;
+  align-items: center;
+  background-color: rgb(255, 252, 248);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+#menu {
+  display: none;
+}
+#logo {
+  height: 3rem;
+  width: 3rem;
+}
+.tag {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  gap: 1.5rem;
+  text-decoration: none;
+}
+.tags:hover {
+  text-decoration: underline;
+  color: blue;
+}
+@media screen and (max-width: 768px) {
+  .box {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .nav {
+    gap: 0.5rem;
+  }
+  .name {
+    font-size: 0.8rem;
+  }
+  .tags {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 576px) {
+  .box {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    padding: 0;
+    background-color: rgba(28, 28, 28, 0.894);
+    width: 10rem;
+  }
+  #nav {
+    display: flex;
+    padding: 1rem;
+  }
+  .tags {
+    color: black;
+    background-color: rgb(211, 218, 218);
+  }
+  #menu {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
